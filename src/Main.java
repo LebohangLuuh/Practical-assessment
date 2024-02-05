@@ -3,7 +3,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
     {
-     System.out.println(isSixtyFive(25,36));
+
+        int num1, num2;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter the first number : ");
+        num1 = scan.nextInt();
+        System.out.println("Enter the Second number : ");
+        num2 = scan.nextInt();
+
+     System.out.println(isSixtyFive(num1,num2));
 
         String [] animals = {"the", "quick", "brown", "fox", "ate", "my", "chickens"};
        longest(animals);
@@ -12,13 +21,7 @@ public class Main {
 
     public static boolean isSixtyFive(int num1, int num2)
     {
-//        int num1, num2;
-        Scanner scan = new Scanner(System.in);
-
-        System.out.println("Enter the first number : ");
-        num1 = scan.nextInt();
-        System.out.println("Enter the Second number : ");
-        num2 = scan.nextInt();
+//
 
         return (num1 == 65 || num2 == 65 || (num1 + num2 == 65)) ? true : false;
 
